@@ -1,9 +1,6 @@
 html {
-  background: url("./static/susan-wilkinson-iFUBMWwLCZQ-unsplash.webp"),
+  background: url("https://64.media.tumblr.com/42f37928efc44d515cb10a323aea62dd/tumblr_oxafbtLqPG1qapjdzo1_1280.jpg"),
     #0c0f09;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   animation: scroll 300s linear infinite;
 
@@ -12,6 +9,11 @@ html {
 
   height: 100%;
   width: 100%;
+
+  overflow: hidden;
+
+  backdrop-filter: brightness(70%);
+  transition: all 3s ease;
 }
 
 #title {
@@ -27,8 +29,6 @@ html {
   border-bottom: 2px solid aliceblue;
 
   font-size: 30px;
-
-  transition: color 1s ease;
 }
 
 #navbar {
@@ -36,7 +36,7 @@ html {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  animation: roll 1.5s;
+  animation: expand 1.5s;
   height: 38px;
 }
 
@@ -49,6 +49,12 @@ html {
 #link {
   color: aliceblue;
   border-bottom: 2px solid aliceblue;
+  text-decoration: none;
+  padding-bottom: 1px;
+}
+
+#link:hover {
+  animation: hover 250ms forwards;
 }
 
 #footer {
@@ -67,17 +73,23 @@ i {
 }
 
 @keyframes scroll {
-  100% {
+  to {
     background-position: 0px -3000px;
   }
 }
 
-@keyframes roll {
+@keyframes expand {
   from {
     max-width: 0%;
   }
 
   to {
     max-width: 100%;
+  }
+}
+
+@keyframes hover {
+  to {
+    padding-bottom: 5px;
   }
 }
