@@ -23,7 +23,7 @@ window.onload = () => {
   }, 500);
 };
 
-function slideToggle(elementId, type) {
+function slideToggle(elementId) {
   const togglables = ["home", "aboutme", "myprojects", "other", "music", "discord"]
 
   togglables.forEach(id => {
