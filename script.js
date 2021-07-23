@@ -1,5 +1,6 @@
 // jQuery hell
 window.onload = () => {
+  document.getElementById("bgm").volume = 0.2;
   setTimeout(() => {
     $("#title").slideDown(1000, () => {
       $("#title").animate(
@@ -21,3 +22,15 @@ window.onload = () => {
     });
   }, 500);
 };
+
+function slideToggle(elementId, type) {
+  const togglables = ["home", "aboutme", "myprojects", "other", "music"]
+
+  togglables.forEach(id => {
+    if (id !== elementId) {
+      $(`#${id}`).slideUp(1000, () => {})
+    }
+  })
+
+  $(`#${elementId}`).slideToggle(1000, () => {} )
+}

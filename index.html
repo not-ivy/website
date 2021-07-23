@@ -28,32 +28,44 @@
   </head>
 
   <body id="wrapper">
+    <!--Navigation Bar-->
     <div id="navbar" style="display: none">
       <a id="link" class="placeholder" href="#"></a>
       <a id="link" class="placeholder" href="#"></a>
       <a id="link" class="placeholder" href="#"></a>
       <a id="link" href="#">Home</a>
       <a id="link" href="#"></a>
-      <a id="link" href="#" onclick="$('#aboutme').slideDown(1000, () => {})"
-        >About Me</a
-      >
+      <a id="link" href="#" onclick="slideToggle('aboutme')">About Me</a>
       <a id="link" href="#"></a>
       <a id="link" href="#">My Projects</a>
       <a id="link" href="#"></a>
       <a id="link" href="#">Other</a>
     </div>
+
+    <!--Title-->
     <h1 id="title" style="display: none">sourTaste000</h1>
-    <p id="Home" class="main">Home</p>
+
+    <!--Contents-->
+    <p id="home" class="main">Home</p>
     <p id="aboutme" class="main">aboutme</p>
     <p id="myprojects" class="main">myprojects</p>
     <p id="other" class="main">other</p>
+    <p id="music" class="main">
+      <audio id="bgm" autoplay controls loop>
+        <source src="./static/Encounters_BGM.flac" type="audio/flac" />
+      </audio>
+    </p>
+
+    <!--footer-->
     <div id="footer" style="display: none">
       <a href="#"><i class="fab fa-github"></i></a>
       <a href="#"><i class="fab fa-discord"></i></a>
-      <a
-        href="https://keys.openpgp.org/vks/v1/by-fingerprint/AEC7EF1F3BAABA0473FB71909D7E2B282984777F"
-        ><i class="fas fa-key"></i
-      ></a>
+      <a href="https://short.sourtaste000.dev/gpgKey">
+        <i class="fas fa-key"></i>
+      </a>
+      <a href="#" onclick="slideToggle('music')">
+        <i class="fas fa-volume-down"></i>
+      </a>
     </div>
   </body>
   <script src="./script.js"></script>
