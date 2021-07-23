@@ -1,5 +1,5 @@
 html {
-  background: url("./static/pawel-czerwinski-3fvHjNUbJnU-unsplash.webp"),
+  background: url("./static/susan-wilkinson-iFUBMWwLCZQ-unsplash.webp"),
     #0c0f09;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -20,8 +20,9 @@ html {
   position: absolute;
   margin: 10px;
   top: 50%;
+  left: 5%;
 
-  animation: shorten 1s ;
+  animation: shorten 1s;
 
   border-bottom: 2px solid aliceblue;
 
