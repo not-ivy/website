@@ -57,6 +57,10 @@ html {
   animation: hover 250ms forwards;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 #footer {
   position: fixed;
   bottom: 0;

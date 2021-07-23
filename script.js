@@ -24,7 +24,7 @@ window.onload = () => {
 };
 
 function slideToggle(elementId, type) {
-  const togglables = ["home", "aboutme", "myprojects", "other", "music"]
+  const togglables = ["home", "aboutme", "myprojects", "other", "music", "discord"]
 
   togglables.forEach(id => {
     if (id !== elementId) {
