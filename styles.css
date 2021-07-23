@@ -40,6 +40,12 @@ html {
   height: 38px;
 }
 
+.main {
+  color: aliceblue;
+  display: none;
+  margin: 50px;
+}
+
 #link {
   color: aliceblue;
   border-bottom: 2px solid aliceblue;
