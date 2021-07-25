@@ -1,5 +1,5 @@
 html {
-  background: url("https://64.media.tumblr.com/42f37928efc44d515cb10a323aea62dd/tumblr_oxafbtLqPG1qapjdzo1_1280.jpg"),
+  background: url("static/background.webp"),
     #0c0f09;
   background-size: cover;
   animation: scroll 300s linear infinite;
@@ -59,6 +59,14 @@ html {
 
 a:hover {
   cursor: pointer;
+}
+
+article {
+  line-height: 200%;
+}
+
+iframe {
+  border: 0;
 }
 
 #footer {

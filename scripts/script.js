@@ -1,4 +1,3 @@
-// jQuery hell
 window.onload = () => {
   document.getElementById("bgm").volume = 0.2;
   setTimeout(() => {
@@ -13,7 +12,6 @@ window.onload = () => {
 
       $("#navbar").fadeIn(1000, () => {
         $("#footer").fadeIn(1000, () => {
-          // $("#title").css("border-bottom", "none");
           $(".placeholder").remove();
           $("#title").prependTo("#navbar");
           $("#title").css("position", "unset");
@@ -23,7 +21,7 @@ window.onload = () => {
   }, 500);
 };
 
-function slideToggle(elementId) {
+function slideToggle(...elementId) {
   const togglables = ["home", "aboutme", "myprojects", "other", "music", "discord"]
 
   togglables.forEach(id => {
@@ -32,5 +30,11 @@ function slideToggle(elementId) {
     }
   })
 
-  $(`#${elementId}`).slideToggle(1000, () => {} )
+  let ids = [];
+
+  elementId.forEach((id) => {
+    ids.push(`#${id}`)
+  })
+
+  $(ids.join(",")).slideToggle(1000, () => {} )
 }
