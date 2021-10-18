@@ -1,79 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
-    <meta content="utf-8" http-equiv="encoding" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="sourTaste000's Website" />
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <meta content="utf-8" http-equiv="Content-Type"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="sourTaste000's Portfolio" name="description"/>
 
     <!-- Imports -->
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link href="./styles/styles.css" rel="stylesheet"/>
     <script
-      src="https://kit.fontawesome.com/449a676d85.js"
-      crossorigin="anonymous"
+            crossorigin="anonymous"
+            src="https://kit.fontawesome.com/449a676d85.js"
     ></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <title>sourTaste000's Portfolio</title>
 
     <!-- Open Graph -->
-    <meta property="og:title" content="sourTaste000's Website" />
-    <meta property="og:type" content="profile" />
-    <meta property="og:url" content="https://sourtaste000.dev/" />
+    <meta content="sourTaste000's Portfolio" property="og:title"/>
+    <meta content="profile" property="og:type"/>
+    <meta content="https://sourtaste000.dev/" property="og:url"/>
     <meta
-      property="og:image"
-      content="https://avatars.githubusercontent.com/u/47074495"
+            content="https://avatars.githubusercontent.com/u/47074495"
+            property="og:image"
     />
-    <meta property="og:description" content="Hello!" />
-  </head>
+    <meta content="Hello!" property="og:description"/>
+</head>
 
-  <body id="wrapper">
-    <!--Navigation Bar-->
-    <div id="navbar" style="display: none">
-      <a id="link" class="placeholder" href="#"></a>
-      <a id="link" class="placeholder" href="#"></a>
-      <a id="link" class="placeholder" href="#"></a>
-      <a id="link" onclick="slideToggle('home')">Home</a>
-      <a id="link" href="#"></a>
-      <a id="link" onclick="slideToggle('aboutme')">About Me</a>
-      <a id="link" href="#"></a>
-      <a id="link" onclick="slideToggle('myprojects')">My Projects</a>
-      <a id="link" href="#"></a>
-      <a id="link" onclick="slideToggle('other')">Other</a>
-    </div>
+<body id="wrapper">
+<!--Navigation Bar-->
+<div id="navbar" style="display: none">
+    <a class="spacing" href="#"></a>
+    <a class="spacing" href="#"></a>
+    <a class="spacing" href="#"></a>
+    <a class="link" onclick="slideToggle('home')">Home</a>
+    <a class="link" href="#"></a>
+    <a class="link" onclick="slideToggle('aboutme')">About Me</a>
+    <a class="link" href="#"></a>
+    <a class="link" onclick="slideToggle('myprojects')">My Projects</a>
+    <a class="link" href="#"></a>
+    <a class="link" onclick="slideToggle('other')">Other</a>
+</div>
 
-    <!--Title-->
-    <h1 id="title" style="display: none">sourTaste000</h1>
+<!--Title-->
+<h1 id="title" style="display: none">sourTaste000</h1>
 
-    <!--Contents-->
-    <p id="home" class="main">
-    </p>
-    <iframe id="aboutme" class="main" src="./pages/aboutme.html" title="About Me"></iframe>
-    <iframe id="myprojects" class="main" src="./pages/projects.html" title="My Projects"></iframe>
-    <iframe id="other" class="main" src="./pages/other.html" title="Other"></iframe>
-    <p id="music" class="main">
-      <article id="credits" class="main">
-        Credits: <br>
-        LEMMiNO - Encounters <br>
-        https://soundcloud.com/lemmino/encounters <br>
-        Toggle music here:
-        <audio id="bgm" class="main" style="margin-top: 10px; margin-left: 0;" autoplay controls loop>
-          <source src="./styles/static/Encounters_BGM.ogg" type="audio/ogg" />
-        </audio>
-      </article>
-    </p>
+<!--Contents-->
+<p class="main" id="home">
+    Hello! I am..... and ...... You can navigate this page by clicking the navigation bar at the top, and you can find
+    more links by the buttons below!
+</p>
+<iframe class="main" id="aboutme" src="./pages/aboutme.html" title="About Me"></iframe>
+<iframe class="main" id="myprojects" src="./pages/projects.html" title="My Projects"></iframe>
+<iframe class="main" id="other" src="./pages/other.html" title="Other"></iframe>
+<p>
+<article class="main" id="credits">
+    Credits: <br>
+    LEMMiNO - Encounters <br>
+    https://soundcloud.com/lemmino/encounters <br>
+    Toggle music here:
+    <audio autoplay class="main" controls id="bgm" loop style="margin-top: 10px; margin-left: 0;">
+        <source src="static/Encounters_BGM.ogg" type="audio/ogg"/>
+    </audio>
+</article>
+</p>
 
-    <!--footer-->
-    <div id="footer" style="display: none">
-      <a href="https://github.com/sourTaste000"><i class="fab fa-github"></i></a>
-      <a href="https://discord.gg/RU95sdsJu7"><i class="fab fa-discord"></i></a>
-      <a href="https://short.sourtaste000.dev/gpgKey">
+
+<div id="footer" style="display: none">
+    <a href="https://github.com/sourTaste000"><i class="fab fa-github"></i></a>
+    <a href="https://discord.gg/RU95sdsJu7"><i class="fab fa-discord"></i></a>
+    <a href="https://short.sourtaste000.dev/gpgKey">
         <i class="fas fa-key"></i>
-      </a>
-      <a onclick="slideToggle('credits', 'bgm')">
+    </a>
+    <a onclick="slideToggle('credits', 'bgm')">
         <i class="fas fa-volume-down"></i>
-      </a>
-    </div>
-  </body>
-  <script src="./scripts/script.js"></script>
+    </a>
+    <a onclick="display_simple()">
+        <i class="fas fa-vial"></i>
+    </a>
+</div>
+</body>
+<script src="./scripts/script.js"></script>
 </html>

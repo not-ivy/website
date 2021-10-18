@@ -12,9 +12,9 @@ window.onload = () => {
 
       $("#navbar").fadeIn(1000, () => {
         $("#footer").fadeIn(1000, () => {
-          $(".placeholder").remove();
-          $("#title").prependTo("#navbar");
-          $("#title").css("position", "unset");
+          $(".spacing").remove();
+          $("#title").prependTo("#navbar").css("position", "unset");
+          $("#home").slideDown(500)
         });
       });
     });
@@ -26,7 +26,7 @@ function slideToggle(...elementId) {
 
   togglables.forEach(id => {
     if (id !== elementId) {
-      $(`#${id}`).slideUp(1000, () => {})
+      $(`#${id}`).slideUp(500)
     }
   })
 

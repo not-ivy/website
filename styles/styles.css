@@ -1,5 +1,5 @@
 html {
-  background: url("static/background.webp"),
+  background: url("../static/background.webp"),
     #0c0f09;
   background-size: cover;
   animation: scroll 300s linear infinite;
@@ -44,7 +44,7 @@ html {
   margin: 50px;
 }
 
-#link {
+.link {
   color: aliceblue;
   border-bottom: 2px solid aliceblue;
   text-decoration: none;
@@ -55,7 +55,7 @@ iframe {
   min-width: calc(100% - 8vw);
 }
 
-#link:hover {
+.link:hover {
   animation: hover 250ms forwards;
 }
 
