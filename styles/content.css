@@ -1,0 +1,10 @@
+html,
+body {
+  background: var(--background);
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  color: var(--f_high);
+}

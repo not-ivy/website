@@ -1,0 +1,49 @@
+@import url(./fontface.css);
+
+html,
+body {
+  background-color: var(--background);
+  font-size: 1.5em;
+  color: var(--f_high);
+
+  display: flex;
+  flex-direction: row;
+}
+
+#title {
+  margin: 0;
+  padding: 0;
+
+  font-family: monospace;
+  font-size: 2em;
+
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  animation: blinking 3s ease-in-out infinite;
+}
+
+#title:hover {
+  color: var(--f_low);
+  cursor: pointer;
+}
+
+@keyframes fadeout {
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+
+@keyframes blinking {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 100;
+  }
+  100% {
+    opacity: 0;
+  }
+}
