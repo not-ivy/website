@@ -1,10 +1,50 @@
+@import url(./keyframes.css);
+
 html,
 body {
-  background: var(--background);
+  background-color: var(--background);
+  color: var(--f_high);
+  opacity: 0;
+  animation: fadein 1s ease-in-out forwards;
+  font-family: "Montserrat", sans-serif;
 }
 
-p {
-  font-family: "Montserrat", sans-serif;
+#bar {
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 2px solid var(--f_med);
+}
+
+#bar-title {
   font-size: 1.5em;
+}
+
+#bar-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.bar-item {
   color: var(--f_high);
+  text-decoration: none;
+
+  padding: 0em 5em;
+  font-size: 1em;
+
+  transition: all 0.2s ease-in-out;
+
+  cursor: pointer;
+}
+
+.bar-item:hover {
+  color: var(--f_low);
+}
+
+.content {
+  display: none;
+  margin: 1em;
 }

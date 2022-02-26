@@ -1,4 +1,5 @@
 @import url(./fontface.css);
+@import url(./keyframes.css);
 
 html,
 body {
@@ -22,28 +23,10 @@ body {
   left: 50vw;
   transform: translate(-50%, -50%);
   animation: blinking 3s ease-in-out infinite;
+  transition: all 0.2s ease-in-out;
 }
 
 #title:hover {
   color: var(--f_low);
   cursor: pointer;
-}
-
-@keyframes fadeout {
-  100% {
-    opacity: 0;
-    display: none;
-  }
-}
-
-@keyframes blinking {
-  0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 100;
-  }
-  100% {
-    opacity: 0;
-  }
 }
