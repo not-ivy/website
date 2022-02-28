@@ -1,4 +1,4 @@
-import translation from "../translation.js"
+import { translation } from "../translation.js"
 
 const title = document.getElementById('title');
 
