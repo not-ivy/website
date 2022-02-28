@@ -23,6 +23,8 @@ settings.innerHTML = /*html*/`
 `
 
 document.getElementById('theme-selector').innerHTML += themes.map(theme => /*html*/`<option value="${theme}">${theme}</option>`).join('');
+document.getElementById('theme-selector').removeChild(document.getElementById('theme-selector').firstChild);
+document.getElementById('theme-selector').value = localStorage.getItem('theme-name');
 
 document.getElementById('theme-selector').addEventListener('change', () => {
   fetch(`/themes/${document.getElementById('theme-selector').value}`)
@@ -31,5 +33,6 @@ document.getElementById('theme-selector').addEventListener('change', () => {
       theme.load(data);
       document.getElementById('theme-selector').value = document.getElementById('theme-selector').value;
       document.getElementById('theme-preview').innerHTML = data;
+      localStorage.setItem('theme-name', document.getElementById('theme-selector').value);
     });
 });

@@ -48,3 +48,8 @@ body {
   display: none;
   margin: 1em;
 }
+
+fieldset {
+  border: 2px solid var(--f_med);
+  border-radius: 0.5em;
+}
