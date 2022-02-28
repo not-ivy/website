@@ -1,4 +1,10 @@
 Rewrite(again) of my website.
 
-Themes framework and themes are from: https://github.com/hundredrabbits/Themes.
-Font AlphaBeta from http://mutabletypography.com/, which is owned by Rolando G Alcantara.
+To build the website, run:
+    yarn            # Install dependencies
+    yarn dev        # Live preview
+    yarn build      # Build to ./dist
+
+Thanks To:
+  Hundredrabbits- Theme framework and themes from https://github.com/hundredrabbits/Themes.
+  Rolando G Alcantara- Font AlphaBeta from http://mutabletypography.com/.
