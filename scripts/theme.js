@@ -46,11 +46,12 @@ vacuui.svg
 zenburn.svg
 `.split('\n');
 
+// eslint-disable-next-line no-undef
 const theme = new Theme();
 theme.install();
 theme.start();
 
 export {
   themes,
-  theme
+  theme,
 };

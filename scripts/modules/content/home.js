@@ -1,15 +1,6 @@
 const home = document.getElementById('home');
 
-home.style.display = 'block';
-
-document.getElementById('home-button').addEventListener('click', () => {
-  for (let item of document.getElementsByClassName('content')) {
-    item.style.display = 'none';
-  }
-  home.style.display = 'block';
-});
-
-home.innerHTML = /*html*/`
+home.innerHTML = /* html */`
 <div class="title"><h1>Home</h1></div>
 <p>
   Welcome to my website! I create programs and website on my free time, and I'm always looking for new projects to work on.<br>

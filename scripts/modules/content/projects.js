@@ -1,13 +1,6 @@
 const projects = document.getElementById('projects');
 
-document.getElementById('projects-button').addEventListener('click', () => {
-  for (let item of document.getElementsByClassName('content')) {
-    item.style.display = 'none';
-  }
-  projects.style.display = 'block';
-});
-
-projects.innerHTML = /*html*/`
+projects.innerHTML = /* html */`
 <div class="title"><h1>Projects</h1></div>
 
 <hr class="low">

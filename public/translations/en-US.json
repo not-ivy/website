@@ -1,7 +1,7 @@
 {
   "title": "Hello",
-  "home": "Home",
-  "projects": "Projects",
-  "other": "Other",
-  "settings": "Settings"
+  "home-button": "Home",
+  "projects-button": "Projects",
+  "other-button": "Other",
+  "settings-button": "Settings"
 }
