@@ -13,6 +13,8 @@ home.innerHTML = /*html*/`
 <div class="title"><h1>Home</h1></div>
 <p>
   Welcome to my website! I create programs and website on my free time, and I'm always looking for new projects to work on.<br>
+  I am familar with HTML, CSS, TypeScript, JavaScript, Bash Scripting, and Kotlin. <br>
+  I am currently learning rust. <br>
   Use the buttons above to navigate to the different sections of my website.
 </p>
 
