@@ -51,6 +51,5 @@
   font-style: normal;
   font-weight: 400;
   src: local(""),
-    url("../fonts/montserrat-v23-latin-regular.woff2") format("woff2"),
     url("../fonts/montserrat-v23-latin-regular.woff") format("woff");
 }
