@@ -45,3 +45,9 @@
   src: url("../fonts/alphabeta-eighthchild-webfont.woff") format("woff");
   font-display: swap;
 }
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("ttf");
+  font-display: swap;
+}
