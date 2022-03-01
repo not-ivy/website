@@ -9,8 +9,20 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+fieldset {
+  border: 2px solid var(--f_med);
+  border-radius: 0.5em;
+}
+
+a {
+  color: var(--f_med);
+}
+
+a:visited {
+  color: var(--f_low);
+}
+
 #bar {
-  position: sticky;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -35,8 +47,6 @@ body {
   padding: 0em 5em;
   font-size: 1em;
 
-  transition: all 0.2s ease-in-out;
-
   cursor: pointer;
 }
 
@@ -46,10 +56,19 @@ body {
 
 .content {
   display: none;
-  margin: 1em;
+  margin: 1em 10em;
 }
 
-fieldset {
-  border: 2px solid var(--f_med);
-  border-radius: 0.5em;
+.title {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 0;
+}
+
+hr.med {
+  border-bottom: 2px solid var(--f_med);
+}
+
+hr.low {
+  border-bottom: 2px solid var(--f_low);
 }
