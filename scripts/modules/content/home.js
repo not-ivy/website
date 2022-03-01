@@ -17,7 +17,7 @@ home.innerHTML = /*html*/`
 </p>
 
 <hr class="low">
-<h3>Contact</h3>
+<h2>Contact</h2>
 <p>
   Discord: sourTaste000#2391 (&lt;8 hours)
   <br>
@@ -26,7 +26,7 @@ home.innerHTML = /*html*/`
   Keybase: <a href="https://keybase.io/sussyimpostor">sussyimpostor</a> (&lt;24 hours)
 </p>
 <hr class="low">
-<h3>Links</h3>
+<h2>Links</h2>
 <p>
   GitHub: <a href="https://github.com/sourTaste000/">sourTaste000</a>
   <br>

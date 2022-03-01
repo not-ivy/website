@@ -11,7 +11,7 @@ projects.innerHTML = /*html*/`
 <div class="title"><h1>Projects</h1></div>
 
 <hr class="low">
-<h3>Discord:</h3>
+<h2>Discord:</h2>
 <ul>
   <li>
     <a href="https://github.com/sourTaste000/compass">Compass</a>
@@ -47,7 +47,7 @@ projects.innerHTML = /*html*/`
 </ul>
 
 <hr class="low">
-<h3>Websites:</h3>
+<h2>Websites:</h2>
 <ul>
   <li>
     <a href="https://github.com/sourTaste000/website">This website!</a>
@@ -70,7 +70,7 @@ projects.innerHTML = /*html*/`
 </ul>
 
 <hr class="low">
-<h3>Other Programs:</h3>
+<h2>Other Programs:</h2>
 <ul>
   <li>
     <a href="https://github.com/sourTaste000/blog-rs">blog-rs</a>
