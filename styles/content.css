@@ -1,6 +1,3 @@
-@import url(./keyframes.css);
-@import url(./fontface.css);
-
 html,
 body {
   background-color: var(--background);
