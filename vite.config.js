@@ -7,6 +7,11 @@ fs.writeFileSync(
   JSON.stringify(fs.readdirSync(resolve(__dirname, 'public', 'translations'))),
 );
 
+fs.writeFileSync(
+  resolve(__dirname, 'public', 'themes', 'themes.json'),
+  JSON.stringify(fs.readdirSync(resolve(__dirname, 'public', 'themes'))),
+);
+
 export default defineConfig({
   build: {
     target: 'esnext',
