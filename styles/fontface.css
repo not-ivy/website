@@ -48,6 +48,9 @@
 
 @font-face {
   font-family: "Montserrat";
-  src: url("../fonts/Montserrat-VariableFont_wght.ttf") format("ttf");
-  font-display: swap;
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/montserrat-v23-latin-regular.woff2") format("woff2"),
+    url("../fonts/montserrat-v23-latin-regular.woff") format("woff");
 }
