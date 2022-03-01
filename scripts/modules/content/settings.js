@@ -1,4 +1,5 @@
-import { theme, themes } from '../../theme';
+import { loadTheme, themes } from '../../theme';
+import { loadTranslation, translationList } from '../translation';
 
 const settings = document.getElementById('settings');
 
@@ -9,24 +10,32 @@ settings.innerHTML = /* html */`
     <label>Select a theme:</label>
     <select id="theme-selector"></select>
   </div>
+</fieldset>
+<fieldset>
+  <legend>Language</legend>
   <div>
-    <label>Preview:</label>
-    <div id="theme-preview"></div>
+    <label>Select a language:</label>
+    <select id="language-selector"></select>
   </div>
 </fieldset>
 `;
 
-document.getElementById('theme-selector').innerHTML += themes.map((fetchedTheme) => /* html */`<option value="${fetchedTheme}">${fetchedTheme}</option>`).join('');
-document.getElementById('theme-selector').removeChild(document.getElementById('theme-selector').firstChild);
-document.getElementById('theme-selector').value = localStorage.getItem('theme-name');
+const themeSelector = document.getElementById('theme-selector');
 
-document.getElementById('theme-selector').addEventListener('change', () => {
-  fetch(`/themes/${document.getElementById('theme-selector').value}`)
-    .then((response) => response.text())
-    .then((data) => {
-      theme.load(data);
-      document.getElementById('theme-selector').value = document.getElementById('theme-selector').value;
-      document.getElementById('theme-preview').innerHTML = data;
-      localStorage.setItem('theme-name', document.getElementById('theme-selector').value);
-    });
+themeSelector.innerHTML += themes.map((fetchedTheme) => /* html */`<option value="${fetchedTheme}">${fetchedTheme}</option>`).join('');
+themeSelector.removeChild(document.getElementById('theme-selector').firstChild);
+themeSelector.value = localStorage.getItem('theme-name');
+
+themeSelector.addEventListener('change', () => {
+  loadTheme(`/themes/${themeSelector.value}`);
+  localStorage.setItem('theme-name', themeSelector.value);
+});
+
+const languageSelector = document.getElementById('language-selector');
+languageSelector.innerHTML += translationList.map((fetchedLanguage) => /* html */`<option value="${fetchedLanguage}">${fetchedLanguage}</option>`).join('');
+languageSelector.value = localStorage.getItem('set-language') || `${navigator.language || navigator.userLanguage}.json`;
+
+languageSelector.addEventListener('change', () => {
+  loadTranslation(`/translations/${languageSelector.value}`);
+  localStorage.setItem('set-language', languageSelector.value);
 });

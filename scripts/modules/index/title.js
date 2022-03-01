@@ -1,5 +1,6 @@
-import { translation } from '../translation';
+import { getTranslation } from '../translation';
 
+const translation = getTranslation();
 const title = document.getElementById('title');
 const mutations = ['AlphaBetaFirstChild', 'AlphaBetaSecondChild', 'AlphaBetaThirdChild', 'AlphaBetaFourthChild', 'AlphaBetaFifthChild', 'AlphaBetaSixthChild', 'AlphaBetaSeventhChild', 'AlphaBetaEighthChild'];
 title.style.fontFamily = mutations[Math.floor(Math.random() * mutations.length)];
