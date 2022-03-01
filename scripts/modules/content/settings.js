@@ -33,7 +33,7 @@ themeSelector.addEventListener('change', () => {
 
 const languageSelector = document.getElementById('language-selector');
 languageSelector.innerHTML += translationList.map((fetchedLanguage) => /* html */`<option value="${fetchedLanguage}">${fetchedLanguage}</option>`).join('');
-languageSelector.value = localStorage.getItem('set-language') || `${navigator.language || navigator.userLanguage}.json`;
+languageSelector.value = localStorage.getItem('set-language') || `${navigator.language || navigator.userLanguage}`;
 
 languageSelector.addEventListener('change', () => {
   loadTranslation(`/translations/${languageSelector.value}`);
