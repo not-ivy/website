@@ -37,5 +37,5 @@ languageSelector.value = localStorage.getItem('set-language') || `${navigator.la
 
 languageSelector.addEventListener('change', () => {
   loadTranslation(`/translations/${languageSelector.value}`);
-  localStorage.setItem('set-language', languageSelector.value);
+  localStorage.setItem('set-language', languageSelector.value.split('.json')[0]);
 });
