@@ -1,6 +1,11 @@
 const language = localStorage.getItem('set-language') || navigator.language || navigator.userLanguage;
 const translationList = await (await fetch('/api/translations.json')).json();
-let translation = await (await fetch(`/translations/${language}.json`)).json();
+let translation;
+try {
+  translation = await (await fetch(`/translations/${language}.json`)).json();
+} catch (e) {
+  translation = await (await fetch('/translations/en-US.json')).json();
+}
 
 const translatable = document.querySelectorAll('.translatable');
 
