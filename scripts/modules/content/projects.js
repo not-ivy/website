@@ -1,9 +1,7 @@
 const projects = document.getElementById('projects');
 
 projects.innerHTML = /* html */`
-<div class="title"><h1>Projects</h1></div>
-
-<hr class="low">
+<br>
 <h2>Discord:</h2>
 <ul>
   <li>
@@ -39,7 +37,7 @@ projects.innerHTML = /* html */`
   </li>
 </ul>
 
-<hr class="low">
+<br>
 <h2>Websites:</h2>
 <ul>
   <li>
@@ -62,7 +60,7 @@ projects.innerHTML = /* html */`
   </li>
 </ul>
 
-<hr class="low">
+<br>
 <h2>Other Programs:</h2>
 <ul>
   <li>
