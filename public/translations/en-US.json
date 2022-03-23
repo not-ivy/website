@@ -3,5 +3,6 @@
   "home-button": "Home",
   "projects-button": "Projects",
   "other-button": "Other",
-  "settings-button": "Settings"
+  "settings-button": "Settings",
+  "not-found-translation": "404 Not found"
 }

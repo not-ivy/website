@@ -6,12 +6,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta property="og:title" content="Rewrite">
-  <link rel="stylesheet" href="/styles/keyframes.css">
-  <link rel="stylesheet" href="/styles/fontface.css">
-  <link rel="stylesheet" href="/styles/index.css">
-  <link rel="icon" href="favicon.ico">
+  <meta property="description" content="About me.">
+  <link rel="stylesheet" href="./styles/keyframes.css">
+  <link rel="stylesheet" href="./styles/fontface.css">
+  <link rel="stylesheet" href="./styles/content.css">
+  <link rel="icon" href="/favicon.ico">
   <script defer src="https://cdn.jsdelivr.net/gh/hundredrabbits/Themes/scripts/lib/theme.js"></script>
-  <script defer type="module" src="./scripts/theme.js"></script>
+  <script type="module" defer src="./scripts/theme.js"></script>
   <script async defer data-website-id="10b8fb5a-47c1-4a98-8b49-dbffc74946b7"
     src="https://umami.i-sp.in/umami.js"></script>
   <title>sourTaste000</title>
@@ -19,9 +20,27 @@
 
 <body>
   <p class="translatable umami--click--content-button" id="title"></p>
+  <div id="bar">
+    <p id="bar-title"><strong>sourTaste000</strong></p>
+    <div id="bar-items">
+      <p class="bar-item translatable umami--click--home-button" id="home-button"></p>
+      <p class="bar-item translatable umami--click--projects-button" id="projects-button"></p>
+      <p class="bar-item translatable umami--click--other-button" id="other-button"></p>
+      <p class="bar-item translatable umami--click--settings-button" id="settings-button"></p>
+    </div>
+  </div>
+  <div class="content" id="home"></div>
+  <div class="content" id="projects"></div>
+  <div class="content" id="other"></div>
+  <div class="content" id="settings"></div>
 </body>
 
 <script type="module" src="./scripts/modules/translation.js"></script>
 <script type="module" src="./scripts/modules/index/title.js"></script>
+<script type="module" src="./scripts/modules/content/contentManager.js"></script>
+<script type="module" src="./scripts/modules/content/home.js"></script>
+<script type="module" src="./scripts/modules/content/projects.js"></script>
+<script type="module" src="./scripts/modules/content/other.js"></script>
+<script type="module" src="./scripts/modules/content/settings.js"></script>
 
 </html>

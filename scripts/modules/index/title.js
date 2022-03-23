@@ -1,15 +1,15 @@
 import { getTranslation } from '../translation';
+import { mutationForElement } from '../fontMutator';
 
 const translation = getTranslation();
 const title = document.getElementById('title');
-const mutations = ['AlphaBetaFirstChild', 'AlphaBetaSecondChild', 'AlphaBetaThirdChild', 'AlphaBetaFourthChild', 'AlphaBetaFifthChild', 'AlphaBetaSixthChild', 'AlphaBetaSeventhChild', 'AlphaBetaEighthChild'];
-title.style.fontFamily = mutations[Math.floor(Math.random() * mutations.length)];
+mutationForElement(title);
 
 const refresh = () => {
   translation.title.split('').forEach((char) => {
     const span = document.createElement('span');
     span.innerText = char;
-    span.style.fontFamily = mutations[Math.floor(Math.random() * mutations.length)];
+    mutationForElement(span);
     title.appendChild(span);
   });
 };
@@ -17,7 +17,8 @@ const refresh = () => {
 const displayContent = () => {
   title.style.animation = 'fadeout 1.5s forwards';
   setTimeout(() => {
-    window.location.href = 'content.html';
+    document.getElementById('home').style.display = 'block';
+    document.getElementById('bar').style.display = 'flex';
   }, 1500);
 };
 
