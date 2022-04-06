@@ -1,3 +1,4 @@
+import anime from 'animejs';
 import { getTranslation } from '../translation';
 import { mutationForElement } from '../fontMutator';
 
@@ -14,19 +15,39 @@ const refresh = () => {
   });
 };
 
-const displayContent = () => {
-  title.style.animation = 'fadeout 1.5s forwards';
-  setTimeout(() => {
-    document.getElementById('home').style.display = 'block';
-    document.getElementById('bar').style.display = 'flex';
-  }, 1500);
-};
-
-title.addEventListener('click', displayContent);
-
-setInterval(() => {
+const refreshTitle = setInterval(() => {
   while (title.firstChild) {
     title.removeChild(title.firstChild);
   }
   refresh();
 }, 3000);
+
+const displayContent = () => {
+  clearInterval(refreshTitle);
+  title.style.animation = 'none';
+  title.style.color = 'var(--background)';
+  anime.timeline({
+    targets: '#title',
+    easing: 'easeInOutSine',
+  }).add({
+    translateX: '-50%',
+    translateY: '-50%',
+    fontSize: 0,
+    borderWidth: 10,
+  }).add({
+    rotate: {
+      value: 90,
+      duration: 500,
+    },
+  }).add({
+    opacity: 0,
+    fontSize: '3000px',
+    duration: 1000,
+  });
+  setTimeout(() => {
+    document.getElementById('home').style.display = 'block';
+    document.getElementById('bar').style.display = 'flex';
+  }, 3000);
+};
+
+title.addEventListener('click', displayContent);

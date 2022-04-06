@@ -18,6 +18,8 @@ body {
   transform: translate(-50%, -50%);
   animation: blinking 3s ease-in-out infinite;
   transition: all 0.2s ease-in-out;
+
+  border: 0px solid var(--f_high);
 }
 
 #title:hover {

@@ -5,6 +5,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "animejs": "^3.2.1",
+    "events": "^3.3.0",
     "vite": "^2.8.0"
   },
   "devDependencies": {

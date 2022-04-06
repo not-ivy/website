@@ -1,15 +1,44 @@
-import anime from 'animejs';
-import buttonEvent from './contentManager';
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
 
-const other = document.getElementById('other');
-
-other.innerHTML = /* html */`
 <svg
    width="128"
    height="128"
    viewBox="0 0 33.866666 33.866666"
-   id="profile">
-  <g>
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (c3084ef, 2021-09-22)"
+   sodipodi:docname="drawing.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:pageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="px"
+     showgrid="false"
+     units="px"
+     inkscape:zoom="3.5826237"
+     inkscape:cx="38.379693"
+     inkscape:cy="61.965759"
+     inkscape:window-width="1660"
+     inkscape:window-height="942"
+     inkscape:window-x="10"
+     inkscape:window-y="60"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
     <ellipse
        style="fill:none;stroke:#847577;stroke-width:0.372173;stroke-opacity:1"
        id="path870-5"
@@ -32,18 +61,3 @@ other.innerHTML = /* html */`
        id="path3369" />
   </g>
 </svg>
-
-`;
-
-buttonEvent.on('click', () => {
-  anime({
-    targets: 'svg',
-    direction: 'alternate',
-    rotate: {
-      value: Math.random() * 360,
-      duration: 1800,
-      easing: 'easeInOutQuad',
-    },
-    loop: true,
-  });
-});
