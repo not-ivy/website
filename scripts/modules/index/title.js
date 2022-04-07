@@ -47,6 +47,7 @@ const displayContent = () => {
   setTimeout(() => {
     document.getElementById('home').style.display = 'block';
     document.getElementById('bar').style.display = 'flex';
+    title.style.display = 'none';
   }, 3000);
 };
 
