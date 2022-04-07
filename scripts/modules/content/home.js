@@ -1,3 +1,4 @@
+import anime from 'animejs';
 const home = document.getElementById('home');
 
 home.innerHTML = /* html */`
@@ -24,3 +25,14 @@ home.innerHTML = /* html */`
   PGP Key: <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/2377F28C8BDC3BB7CDE8337CD2A1D05E1B5EAA32">2377F28C8BDC3BB7CDE8337CD2A1D05E1B5EAA32</a>
 </p>
 `;
+
+anime({
+  targets: 'svg',
+  direction: 'alternate',
+  rotate: {
+    value: () => anime.random(0, 180),
+    duration: 1800,
+    easing: 'easeInOutSine',
+  },
+  loop: true,
+});

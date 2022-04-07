@@ -50,7 +50,12 @@ a:visited {
 }
 
 #bar-title {
+  display: flex;
   font-size: 1.5rem;
+  margin: 1rem;
+
+  justify-content: center;
+  align-items: center;
 }
 
 #bar-items {
@@ -92,4 +97,9 @@ hr.med {
 
 hr.low {
   border-bottom: 2px solid var(--f_low);
+}
+
+svg {
+  width: 3rem;
+  margin-right: 1.5rem;
 }

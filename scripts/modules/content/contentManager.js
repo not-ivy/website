@@ -19,6 +19,7 @@ contentElements.forEach((item) => {
   document.getElementById(`${item.id}-button`).addEventListener('click', () => {
     hideAll();
     item.style.display = 'block';
+    item.style.opacity = 100;
     buttonEvent.emit('click', item);
   });
 });
