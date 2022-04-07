@@ -16,7 +16,6 @@ const hideAll = () => {
 });
 
 contentElements.forEach((item) => {
-  console.log('adding event listener for', item.id);
   document.getElementById(`${item.id}-button`).addEventListener('click', () => {
     hideAll();
     item.style.display = 'block';
