@@ -12,17 +12,15 @@ home.innerHTML = /* html */`
 <hr class="low">
 <h2>Contact</h2>
 <p>
-  Discord: sourTaste000#2391 (&lt;8 hours)
+  Discord: i-spin#2391 (&lt;8 hours)
   <br>
-  Email: <a href="mailto:sourtaste000@i-sp.in">sourtaste000@i-sp.in</a> (&lt;10 hours)
- <br>
-  Keybase: <a href="https://keybase.io/sussyimpostor">sussyimpostor</a> (&lt;24 hours)
+  Email: <a href="mailto:me@i-sp.in">me@i-sp.in</a> (&lt;10 hours)
 </p>
 <hr class="low">
 <h2>Links</h2>
 <p>
-  GitHub: <a href="https://github.com/sourTaste000/">sourTaste000</a>
+  GitHub: <a href="https://github.com/i-spin/">i-spin</a>
   <br>
-  PGP Key: <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/2377F28C8BDC3BB7CDE8337CD2A1D05E1B5EAA32">D2A1 D05E 1B5E AA32</a>
+  PGP Key: <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/2377F28C8BDC3BB7CDE8337CD2A1D05E1B5EAA32">2377F28C8BDC3BB7CDE8337CD2A1D05E1B5EAA32</a>
 </p>
 `;
