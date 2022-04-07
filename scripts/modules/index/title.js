@@ -46,7 +46,9 @@ const displayContent = () => {
   });
   setTimeout(() => {
     document.getElementById('home').style.display = 'block';
+    document.getElementById('home').style.animation = 'fadein 1s forwards';
     document.getElementById('bar').style.display = 'flex';
+    document.getElementById('bar').style.animation = 'fadein 1s forwards';
     title.style.display = 'none';
   }, 3000);
 };

@@ -41,6 +41,7 @@ a:visited {
 }
 
 #bar {
+  opacity: 0;
   display: none;
   flex-direction: row;
   justify-content: space-around;
@@ -73,8 +74,10 @@ a:visited {
 }
 
 .content {
+  opacity: 0;
   display: none;
   margin: 1rem 10rem;
+  transition: all 1s ease-in-out;
 }
 
 .title {
