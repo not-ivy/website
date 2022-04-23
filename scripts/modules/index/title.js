@@ -24,6 +24,7 @@ const refreshTitle = setInterval(() => {
 
 const displayContent = () => {
   clearInterval(refreshTitle);
+  document.getElementById('body').style.overflow = 'hidden';
   title.style.animation = 'none';
   title.style.color = 'var(--background)';
   anime.timeline({
@@ -50,6 +51,7 @@ const displayContent = () => {
     document.getElementById('bar').style.display = 'flex';
     document.getElementById('bar').style.animation = 'fadein 1s forwards';
     title.style.display = 'none';
+    document.getElementById('body').style.overflow = 'auto';
   }, 3000);
 };
 
