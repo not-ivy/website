@@ -13,14 +13,14 @@ home.innerHTML = /* html */`
 <hr class="low">
 <h2>Contact</h2>
 <p>
-  Discord: i-spin#2391 (&lt;8 hours)
+  Discord: ivy#0404 (&lt;8 hours)
   <br>
-  Email: <a href="mailto:me@i-sp.in">me@i-sp.in</a> (&lt;10 hours)
+  Email: <a href="mailto:ivy@not-ivy.dev">ivy@not-ivy.dev</a> (&lt;10 hours)
 </p>
 <hr class="low">
 <h2>Links</h2>
 <p>
-  GitHub: <a href="https://github.com/i-spin/">i-spin</a>
+  GitHub: <a href="https://github.com/not-ivy/">ivy</a>
   <br>
   PGP Key: <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/2377F28C8BDC3BB7CDE8337CD2A1D05E1B5EAA32">2377F28C8BDC3BB7CDE8337CD2A1D05E1B5EAA32</a>
 </p>

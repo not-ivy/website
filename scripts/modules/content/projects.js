@@ -5,7 +5,7 @@ projects.innerHTML = /* html */`
 <h2>Discord:</h2>
 <ul>
   <li>
-    <a href="https://github.com/i-spin/compass">Compass</a>
+    <a href="https://github.com/not-ivy/compass">Compass</a>
     A library to work with discord webhooks, written in rust.
   </li>
 
@@ -26,13 +26,13 @@ projects.innerHTML = /* html */`
 
   <br>
   <li>
-    <a href="https://github.com/i-spin/OpenTicket">OpenTicket</a>
+    <a href="https://github.com/not-ivy/OpenTicket">OpenTicket</a>
     A simple ticket system bot, written in TypeScript.
   </li>
 
   <br>
   <li>
-    <a href="https://github.com/i-spin/RankAssign">RankAssign</a>
+    <a href="https://github.com/not-ivy/RankAssign">RankAssign</a>
     A bot that works with the game <a href="https://tetr.io">TETR.IO</a>, to assign ranks to players based on their TR.
   </li>
 </ul>
@@ -41,20 +41,20 @@ projects.innerHTML = /* html */`
 <h2>Websites:</h2>
 <ul>
   <li>
-    <a href="https://github.com/i-spin/website">This website!</a>
+    <a href="https://github.com/not-ivy/website">This website!</a>
     Features a translating system, and a theme system.
     It is hosted on Cloudflare Pages, and built using <a href="https://vitejs.dev/">vite</a>.
   </li>
 
   <br>
   <li>
-    <a href="https://github.com/i-spin/launch">Launch</a>
+    <a href="https://github.com/not-ivy/launch">Launch</a>
     Simple and fast browser start/home page, with 100% of HTML.
   </li>
 
   <br>
   <li>
-    <a href="https://github.com/i-spin/lightdm-macOS">lightdm-macOS</a>
+    <a href="https://github.com/not-ivy/lightdm-macOS">lightdm-macOS</a>
     A LightDM webkit2 greeter theme that aims to recreate the macOS login screen.
     There is not a lot of documentation the webkit2 greeter of LightDM, so this is just a design and it is not functional yet.
   </li>
@@ -64,20 +64,20 @@ projects.innerHTML = /* html */`
 <h2>Other Programs:</h2>
 <ul>
   <li>
-    <a href="https://github.com/i-spin/blog-rs">blog-rs</a>
+    <a href="https://github.com/not-ivy/blog-rs">blog-rs</a>
     Tiny blog backend powered by Iron, and built with rust.
     This is my first rust program, so it might be buggy.
   </li>
 
   <br>
   <li>
-    <a href="https://github.com/i-spin/mod-updater">mod-updater</a>
+    <a href="https://github.com/not-ivy/mod-updater">mod-updater</a>
     Easily upgrade/downgrade your minecraft mods with just one file.
   </li>
 
   <br>
   <li>
-    <a href="https://github.com/i-spin/RustMine">RustMine</a>
+    <a href="https://github.com/not-ivy/RustMine">RustMine</a>
     A Minecraft launcher written in Rust, with an Electron frontend.
   </li>
 </ul>
